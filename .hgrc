@@ -1,0 +1,4 @@
+[ui]
+username=Janne Vanhala <janne.vanhala@gmail.com>
+ssh = ssh -C
+ignore=~/.hgignore

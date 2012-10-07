@@ -1,0 +1,28 @@
+[user]
+    name = Janne Vanhala
+    email = janne.vanhala@gmail.com
+[alias]
+    br = branch
+    ci = commit
+    co = checkout
+    df = diff
+    st = status
+[branch]
+    autosetuprebase = always
+[color]
+    ui = true
+[core]
+    attributesfile = ~/.gitattributes
+    excludesfile = ~/.gitignore
+[push]
+    default = current
+[rerere]
+    enabled = true
+[url "git@github.com"]
+    insteadOf = "gh:"
+    pushInsteadOf = "github:"
+    pushInsteadOf = "git://github.com/"
+[url "git://github.com/"]
+    insteadOf = "github:"
+|url "git@heroku.com"]
+    insteadOf = "heroku:"

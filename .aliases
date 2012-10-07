@@ -1,0 +1,20 @@
+# Directory navigation
+alias ..='cd ..'
+alias ll='tree -dirsfirst -ChFupDaLg 1'
+
+# Utilities
+alias edit='$EDITOR'
+alias diff='colordiff'
+alias less='less -R'
+
+# Applications
+alias chrome='open -a "Google Chrome"'
+alias firefox='open -a Firefox'
+alias safari='open -a Safari'
+
+if [ `uname` == "Darwin" ]; then
+    alias ls='ls -G'
+    export LS_COLORS=ExGxFxDxCxHxHxCbCeEbEb
+else
+    alias ls='ls --color=auto'
+fi
