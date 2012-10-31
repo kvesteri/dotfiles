@@ -14,6 +14,7 @@ alias safari='open -a Safari'
 
 if [ `uname` == "Darwin" ]; then
     alias ls='ls -G'
+    alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
     export LS_COLORS=ExGxFxDxCxHxHxCbCeEbEb
 else
     alias ls='ls --color=auto'
