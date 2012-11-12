@@ -15,3 +15,5 @@ source /usr/local/share/python/virtualenvwrapper_lazy.sh
 # Append history entries
 shopt -s histappend
 
+# Enable git autocompletion
+source /usr/local/etc/bash_completion.d/.git-completion.sh
