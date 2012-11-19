@@ -26,8 +26,8 @@ fi
 use_env() {
   typeset venv
   venv="$1"
-  if [[ "${VIRTUAL_ENV:t}" != "$venv" ]]; then
-    if workon | grep -q "$venv"; then
+  if [[ `basename "${VIRTUAL_ENV:t}"` != "$venv" ]]; then
+    if workon | grep $venv > /dev/null; then
       workon "$venv"
     else
       echo -n "Create virtualenv $venv now? (Yn) "
