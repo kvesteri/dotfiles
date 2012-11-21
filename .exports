@@ -13,6 +13,21 @@ export LANG="en_US"
 # Make Sublime Text 2 the default text editor
 export EDITOR="subl -w"
 
+# Use syntax highlight with less. Requires source-highlight.
+#
+# Install on Mac OS X via Homebrew:
+#
+#   $ brew install source-highlight
+#
+# On Ubuntu:
+#
+#   $ sudo apt-get install source-highlight
+#
+if which src-hilite-lesspipe.sh >/dev/null; then
+    export LESSOPEN="| src-hilite-lesspipe.sh %s"
+    export LESS="-R"
+fi
+
 # Don't clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
