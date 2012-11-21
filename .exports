@@ -1,4 +1,10 @@
-export PATH=/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
+# Python scripts
+export PATH="/usr/local/share/python:$PATH"
+
+# npm-installed binaries
+export PATH="/usr/local/share/npm/bin:$PATH"
 
 # Prefer US English and use UTF-8
 export LC_ALL="en_US.UTF-8"
