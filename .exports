@@ -1,4 +1,10 @@
-export PATH=/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
+# Python scripts
+export PATH="/usr/local/share/python:$PATH"
+
+# npm-installed binaries
+export PATH="/usr/local/share/npm/bin:$PATH"
 
 # Prefer US English and use UTF-8
 export LC_ALL="en_US.UTF-8"
@@ -6,6 +12,21 @@ export LANG="en_US"
 
 # Make Sublime Text 2 the default text editor
 export EDITOR="subl -w"
+
+# Use syntax highlight with less. Requires source-highlight.
+#
+# Install on Mac OS X via Homebrew:
+#
+#   $ brew install source-highlight
+#
+# On Ubuntu:
+#
+#   $ sudo apt-get install source-highlight
+#
+if which src-hilite-lesspipe.sh >/dev/null; then
+    export LESSOPEN="| src-hilite-lesspipe.sh %s"
+    export LESS="-R"
+fi
 
 # Don't clear the screen after quitting a manual page
 export MANPAGER="less -X"
