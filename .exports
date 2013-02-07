@@ -41,9 +41,6 @@ export HISTCONTROL=ignoredups:erasedups
 # After each command, save and reload history
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
-# Make some commands not show up in history
-export HISTIGNORE="ls:ls *:cd:exit:* --help"
-
 # Enable colors in grep
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
