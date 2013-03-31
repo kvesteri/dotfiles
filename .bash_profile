@@ -7,7 +7,7 @@ unset file
 source ~/.rvm/scripts/rvm
 
 # Initialize autoenv
-source /usr/local/Cellar/autoenv/0.1.0/activate.sh
+source `brew --prefix`/opt/autoenv/activate.sh
 
 # Initialize virtualenvwrapper
 source /usr/local/share/python/virtualenvwrapper_lazy.sh
