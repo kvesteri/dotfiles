@@ -3,9 +3,6 @@ for file in ~/.{bash_prompt,exports,aliases}; do
 done
 unset file
 
-# Initialize RVM
-source ~/.rvm/scripts/rvm
-
 # Initialize autoenv
 source `brew --prefix`/opt/autoenv/activate.sh
 
